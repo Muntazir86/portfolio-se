@@ -1,0 +1,101 @@
+[
+  {
+    "id": "1",
+    "title": "Data Center Services Portal",
+    "description": "Full-stack data center management solution with Angular, Flask, and postgreSQL",
+    "techStack": ["Angular", "Flask", "PostgreSQL"],
+    "liveDemo": "https://www.rebootmonkey.com/",
+    "github": "",
+    "thumbnail": "images/rebootmonkey.png",
+    "highlights": [
+      "Enterprise-grade Angular SSR architecture",
+      "Interactive geographical visualization with Mapbox API",
+      "Responsive UI with ngZorro/Ant Design System",
+      "Automated CI/CD pipelines with GitLab",
+      "Real-time data center monitoring",
+      "Optimized system performance and stability"
+    ],
+    "commits": [
+      {
+      "hash": "a1b2c3d",
+      "message": "Implement Angular SSR architecture and core components",
+      "date": "2024-03-15"
+      },
+      {
+      "hash": "e4f5g6h",
+      "message": "Integrate Mapbox API for geographical visualization",
+      "date": "2024-04-20"
+      },
+      {
+      "hash": "i7j8k9l",
+      "message": "Implement responsive UI with ngZorro and optimize performance",
+      "date": "2024-06-25"
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "title": "Appointment Booking System",
+    "description": "Enterprise appointment scheduling system integrated with Amelia APIs featuring real-time analytics and secure authentication",
+    "techStack": ["Angular", "TypeScript", "Ruby on Rails", "Docker", "Coolify"],
+    "liveDemo": "",
+    "github": "",
+    "thumbnail": "images/appointment-thumbnail.jpg",
+    "highlights": [
+      "Seamless Amelia API integration for backend management",
+      "Responsive Angular frontend with modern UI/UX",
+      "Role-based access control and encrypted data transmission",
+      "Interactive analytics dashboard with real-time visualizations",
+      "Containerized deployment with Docker and Coolify",
+      "75% reduction in deployment time through automation"
+    ],
+    "commits": [
+      {
+        "hash": "m1n2o3p",
+        "message": "Initial Angular setup with Amelia API integration",
+        "date": "2024-02-01"
+      },
+      {
+        "hash": "q4r5s6t",
+        "message": "Implement authentication and role-based access",
+        "date": "2024-03-10"
+      },
+      {
+        "hash": "w7x8y9z",
+        "message": "Add analytics dashboard with Chart.js",
+        "date": "2024-03-20"
+      },
+      {
+        "hash": "b2c3d4e",
+        "message": "Containerize app and setup Coolify deployment",
+        "date": "2024-03-28"
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "title": "AI Chat Application",
+    "description": "Intelligent chatbot with natural language processing",
+    "techStack": ["React", "Python", "FastAPI", "OpenAI", "Redis"],
+    "liveDemo": "",
+    "github": "",
+    "thumbnail": "images/aichat-thumb.jpg",
+    "highlights": [
+      "Natural language understanding",
+      "Context-aware responses",
+      "Multi-language support"
+    ],
+    "commits": [
+      {
+        "hash": "u7v8w9x",
+        "message": "Initialize FastAPI backend",
+        "date": "2024-03-01"
+      },
+      {
+        "hash": "y1z2a3b",
+        "message": "Integrate OpenAI API",
+        "date": "2024-03-05"
+      }
+    ]
+  }
+]

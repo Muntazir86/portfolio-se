@@ -1,0 +1,107 @@
+@import "tailwindcss";
+
+:root {
+  /* GitHub Dark Theme */
+  --color-primary: #58a6ff;
+  --color-secondary: #f85149;
+  --color-accent: #56d364;
+  --color-background: #0d1117;
+  --color-surface: #161b22;
+  --color-text-primary: #f0f6fc;
+  --color-text-secondary: #8b949e;
+  --color-text-muted: #30363d;
+  --color-terminal-background: #0d1117;
+  --color-terminal-text: #f0f6fc;
+  --color-terminal-cursor: #56d364;
+  --color-terminal-prompt: #58a6ff;
+  --color-syntax-keyword: #ff7b72;
+  --color-syntax-string: #a5d6ff;
+  --color-syntax-number: #79c0ff;
+  --color-syntax-comment: #8b949e;
+  --color-syntax-function: #d2a8ff;
+  --color-syntax-variable: #ffa657;
+}
+/* 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-text-primary);
+  font-family: var(--font-inter), system-ui, sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-secondary);
+}
+
+/* Terminal cursor animation */
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+.cursor-blink {
+  animation: blink 1s infinite;
+}
+
+/* Matrix rain effect */
+@keyframes matrix-fall {
+  0% { transform: translateY(-100vh); opacity: 1; }
+  100% { transform: translateY(100vh); opacity: 0; }
+}
+
+.matrix-char {
+  animation: matrix-fall linear infinite;
+}
+
+/* Glow effects */
+.glow {
+  box-shadow: 0 0 20px var(--color-accent);
+}
+
+.text-glow {
+  text-shadow: 0 0 10px currentColor;
+}
+
+/* Focus styles */
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  
+  html {
+    scroll-behavior: auto;
+  }
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1",
+    "company": "CureMD",
+    "role": "Senior Software Engineer",
+    "duration": "2023 - Present", 
+    "location": "Lahore, PK",
+    "logo": "logos/curemd.png",
+    "technologies": ["Angular", ".Net", "React", "Node.js", "TypeScript", "Azure", "MSSQL", "PostgreSQL"],
+    "achievements": [
+      "Led architecture and development of micro-frontend solutions improving team productivity",
+      "Reduced application load time by 40% through Angular performance optimizations",
+      "Designed and implemented scalable RESTful APIs using .NET Core",
+      "Established code review processes and mentored junior developers",
+      "Optimized CI/CD pipelines reducing deployment time by 60%",
+      "Collaborated with Business Analysts to align technical solutions with requirements"
+    ],
+    "description": "Software Architect and Team Lead focusing on enterprise application development, technical mentorship, and implementing scalable architectural solutions using Angular and .NET Core."
+  },
+  {
+    "id": "2",
+    "company": "Rebootmonkey",
+    "role": "Software Engineer",
+    "duration": "Mar 2024 - Aug 2024",
+    "location": "Remote",
+    "logo": "logos/rebootmonkey.png",
+    "technologies": ["Angular", "Python", "FastAPI", "ngZorro"],
+    "achievements": [
+      "Reduced initial load time by 40% through Angular SSR optimizations",
+      "Developed critical features driving business growth metrics",
+      "Implemented responsive UI components using ngZorro design framework",
+      "Managed CI/CD pipelines and version control through GitLab",
+      "Established thorough testing protocols ensuring application stability",
+      "Served as code reviewer enforcing architectural patterns and standards"
+    ],
+    "description": "Full-stack engineer specializing in Angular SSR optimization, UI/UX development, and DevOps practices. Focused on delivering high-performance web applications with enhanced SEO capabilities."
+  }
+]

@@ -1,0 +1,26 @@
+services:
+  api:
+    build:
+      context: ../..
+      dockerfile: apps/api/Dockerfile
+    ports:
+      - "3100:3100"
+    volumes:
+      - ./.wwebjs_auth:/usr/src/app/.wwebjs_auth
+      - ./.wwebjs_cache:/usr/src/app/.wwebjs_cache
+    env_file:
+      - .env
+    environment:
+      - PORT=${PORT:-3100}
+      - API_PREFIX=${API_PREFIX:-/api}
+      - API_VERSION=${API_VERSION:-v1}
+      - NODE_ENV=${NODE_ENV:-production}
+      - WHATSAPP_NUMBER=${WHATSAPP_NUMBER}
+      - EMAIL_HOST=${EMAIL_HOST}
+      - EMAIL_PORT=${EMAIL_PORT}
+      - EMAIL_USER=${EMAIL_USER}
+      - EMAIL_PASS=${EMAIL_PASS}
+      - EMAIL_TO_CONTACT=${EMAIL_TO_CONTACT}
+      - CROSS_ORIGIN=${CROSS_ORIGIN}
+      - THROTTLE_TTL=${THROTTLE_TTL:-60}
+      - THROTTLE_LIMIT=${THROTTLE_LIMIT:-30}
