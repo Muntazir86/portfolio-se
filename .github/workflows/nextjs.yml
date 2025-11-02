@@ -29,7 +29,7 @@ jobs:
         run: npx turbo run build --filter=web
       
       - name: Add .nojekyll
-        run: touch apps/web/dist/.nojekyll
+        run: touch apps/web/out/.nojekyll
       
       - name: Setup Pages
         uses: actions/configure-pages@v4
