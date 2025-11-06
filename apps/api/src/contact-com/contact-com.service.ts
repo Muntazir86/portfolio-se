@@ -12,7 +12,18 @@ export class ContactComService {
     constructor() {
         this.client = new Client({
             authStrategy: new LocalAuth(),
-            puppeteer: { headless: true },
+            puppeteer: 
+            { headless: true,
+              args: [
+                '--no-sandbox',
+                '--disable-setuid-sandbox',
+                '--disable-dev-shm-usage',
+                '--disable-accelerated-2d-canvas',
+                '--no-first-run',
+                '--no-zygote',
+                '--disable-gpu'
+              ]
+             },
         });
 
         // When the client is ready, run this code (only once)

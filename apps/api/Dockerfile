@@ -82,6 +82,7 @@ RUN apt-get update && apt-get install -y \
 # Create a non-root user and give ownership
 RUN groupadd -r pptruser && useradd -r -g pptruser -G audio,video pptruser \
     && mkdir -p /home/pptruser/Downloads \
+    && mkdir -p /usr/src/app/.wwebjs_auth \
     && chown -R pptruser:pptruser /home/pptruser \
     && chown -R pptruser:pptruser /usr/src/app
 

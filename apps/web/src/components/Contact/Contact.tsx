@@ -37,7 +37,7 @@ export const Contact: React.FC = () => {
 
     try {
       const backend = process.env.NEXT_PUBLIC_BACKEND_URL;
-      const res = await fetch(`${backend}/api/contact`, {
+      const res = await fetch(`${backend}/contact`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
