@@ -24,7 +24,13 @@ jobs:
       
       - name: Install dependencies
         run: npm ci
-      
+        
+      - name: Create env
+        env:
+          BACKEND_URL: ${{ vars.BACKEND_URL }}
+        run: |
+          echo "NEXT_PUBLIC_BACKEND_URL=$BACKEND_URL" > .env
+        
       - name: Build
         run: npx turbo run build --filter=web
       
