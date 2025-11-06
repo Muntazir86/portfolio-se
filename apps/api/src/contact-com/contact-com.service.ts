@@ -15,13 +15,7 @@ export class ContactComService {
             puppeteer: 
             { headless: true,
               args: [
-                '--no-sandbox',
-                '--disable-setuid-sandbox',
-                '--disable-dev-shm-usage',
-                '--disable-accelerated-2d-canvas',
-                '--no-first-run',
-                '--no-zygote',
-                '--disable-gpu'
+                '--no-sandbox', '--disable-setuid-sandbox'
               ]
              },
         });
@@ -35,6 +29,19 @@ export class ContactComService {
         // When the client received QR-Code
         this.client.on('qr', (qr) => {
             qrcode.generate(qr, {small: true});
+        });
+
+        this.client.on('auth_failure', (msg) => {
+            console.error('AUTHENTICATION FAILURE', msg);
+        });
+
+        this.client.on('disconnected', (reason) => {
+            console.log('Client was logged out', reason);
+            this.isWebAppReady = false;
+        });
+
+        this.client.on('authenticated', () => {
+            console.log('Client is authenticated!');
         });
 
         // Start your client
