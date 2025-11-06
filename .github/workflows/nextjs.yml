@@ -30,6 +30,7 @@ jobs:
           BACKEND_URL: ${{ vars.BACKEND_URL }}
         run: |
           echo "NEXT_PUBLIC_BACKEND_URL=$BACKEND_URL" > .env
+        working-directory: apps/web
         
       - name: Build
         run: npx turbo run build --filter=web
